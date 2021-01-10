@@ -14,7 +14,7 @@ StyleDictionary.registerTransform({
       return prop.attributes.category === 'font' || prop.attributes.category === 'margin';
   },
   transformer: function(prop) {
-      return `${prop.value}px`;
+      return `${prop.original.value}px`;
   }
 });
 
